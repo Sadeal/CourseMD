@@ -36,15 +36,15 @@
             this.addCity = new System.Windows.Forms.Button();
             this.getClientUsage = new System.Windows.Forms.Button();
             this.manageColumn = new System.Windows.Forms.Button();
-            this.clients = new System.Windows.Forms.Button();
-            this.columns = new System.Windows.Forms.Button();
-            this.citys = new System.Windows.Forms.Button();
+            this.client = new MaterialSkin.Controls.MaterialButton();
+            this.column = new MaterialSkin.Controls.MaterialButton();
+            this.city = new MaterialSkin.Controls.MaterialButton();
             this.SuspendLayout();
             // 
             // manageClient
             // 
             this.manageClient.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.manageClient.Location = new System.Drawing.Point(60, 140);
+            this.manageClient.Location = new System.Drawing.Point(192, 149);
             this.manageClient.Name = "manageClient";
             this.manageClient.Size = new System.Drawing.Size(180, 83);
             this.manageClient.TabIndex = 0;
@@ -55,7 +55,7 @@
             // addColumn
             // 
             this.addColumn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.addColumn.Location = new System.Drawing.Point(61, 51);
+            this.addColumn.Location = new System.Drawing.Point(6, 149);
             this.addColumn.Name = "addColumn";
             this.addColumn.Size = new System.Drawing.Size(180, 83);
             this.addColumn.TabIndex = 1;
@@ -66,7 +66,7 @@
             // getColumnUsage
             // 
             this.getColumnUsage.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.getColumnUsage.Location = new System.Drawing.Point(61, 229);
+            this.getColumnUsage.Location = new System.Drawing.Point(378, 149);
             this.getColumnUsage.Name = "getColumnUsage";
             this.getColumnUsage.Size = new System.Drawing.Size(180, 83);
             this.getColumnUsage.TabIndex = 2;
@@ -77,7 +77,7 @@
             // addClient
             // 
             this.addClient.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.addClient.Location = new System.Drawing.Point(60, 51);
+            this.addClient.Location = new System.Drawing.Point(6, 149);
             this.addClient.Name = "addClient";
             this.addClient.Size = new System.Drawing.Size(180, 83);
             this.addClient.TabIndex = 3;
@@ -88,7 +88,7 @@
             // addCity
             // 
             this.addCity.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.addCity.Location = new System.Drawing.Point(61, 51);
+            this.addCity.Location = new System.Drawing.Point(192, 149);
             this.addCity.Name = "addCity";
             this.addCity.Size = new System.Drawing.Size(180, 83);
             this.addCity.TabIndex = 4;
@@ -99,7 +99,7 @@
             // getClientUsage
             // 
             this.getClientUsage.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.getClientUsage.Location = new System.Drawing.Point(61, 229);
+            this.getClientUsage.Location = new System.Drawing.Point(378, 149);
             this.getClientUsage.Name = "getClientUsage";
             this.getClientUsage.Size = new System.Drawing.Size(180, 83);
             this.getClientUsage.TabIndex = 5;
@@ -110,7 +110,7 @@
             // manageColumn
             // 
             this.manageColumn.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.manageColumn.Location = new System.Drawing.Point(61, 140);
+            this.manageColumn.Location = new System.Drawing.Point(192, 149);
             this.manageColumn.Name = "manageColumn";
             this.manageColumn.Size = new System.Drawing.Size(180, 83);
             this.manageColumn.TabIndex = 6;
@@ -118,45 +118,75 @@
             this.manageColumn.UseVisualStyleBackColor = false;
             this.manageColumn.Click += new System.EventHandler(this.ManageColumn_Click);
             // 
-            // clients
+            // client
             // 
-            this.clients.Location = new System.Drawing.Point(12, 12);
-            this.clients.Name = "clients";
-            this.clients.Size = new System.Drawing.Size(89, 33);
-            this.clients.TabIndex = 7;
-            this.clients.Text = "Клиенты";
-            this.clients.UseVisualStyleBackColor = true;
-            this.clients.Click += new System.EventHandler(this.clients_Click);
+            this.client.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.client.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.client.Depth = 0;
+            this.client.HighEmphasis = true;
+            this.client.Icon = null;
+            this.client.Location = new System.Drawing.Point(34, 89);
+            this.client.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.client.MouseState = MaterialSkin.MouseState.HOVER;
+            this.client.Name = "client";
+            this.client.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.client.Size = new System.Drawing.Size(92, 36);
+            this.client.TabIndex = 10;
+            this.client.Text = "Клиенты";
+            this.client.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.client.UseAccentColor = false;
+            this.client.UseVisualStyleBackColor = true;
+            this.client.Click += new System.EventHandler(this.client_Click);
             // 
-            // columns
+            // column
             // 
-            this.columns.Location = new System.Drawing.Point(107, 12);
-            this.columns.Name = "columns";
-            this.columns.Size = new System.Drawing.Size(89, 33);
-            this.columns.TabIndex = 8;
-            this.columns.Text = "Колонки";
-            this.columns.UseVisualStyleBackColor = true;
-            this.columns.Click += new System.EventHandler(this.columns_Click);
+            this.column.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.column.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.column.Depth = 0;
+            this.column.HighEmphasis = true;
+            this.column.Icon = null;
+            this.column.Location = new System.Drawing.Point(220, 89);
+            this.column.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.column.MouseState = MaterialSkin.MouseState.HOVER;
+            this.column.Name = "column";
+            this.column.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.column.Size = new System.Drawing.Size(92, 36);
+            this.column.TabIndex = 11;
+            this.column.Text = "Колонки";
+            this.column.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.column.UseAccentColor = false;
+            this.column.UseVisualStyleBackColor = true;
+            this.column.Click += new System.EventHandler(this.column_Click);
             // 
-            // citys
+            // city
             // 
-            this.citys.Location = new System.Drawing.Point(202, 12);
-            this.citys.Name = "citys";
-            this.citys.Size = new System.Drawing.Size(91, 33);
-            this.citys.TabIndex = 9;
-            this.citys.Text = "Города";
-            this.citys.UseVisualStyleBackColor = true;
-            this.citys.Click += new System.EventHandler(this.citys_Click);
+            this.city.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.city.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.city.Depth = 0;
+            this.city.HighEmphasis = true;
+            this.city.Icon = null;
+            this.city.Location = new System.Drawing.Point(413, 89);
+            this.city.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.city.MouseState = MaterialSkin.MouseState.HOVER;
+            this.city.Name = "city";
+            this.city.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.city.Size = new System.Drawing.Size(80, 36);
+            this.city.TabIndex = 12;
+            this.city.Text = "Города";
+            this.city.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.city.UseAccentColor = false;
+            this.city.UseVisualStyleBackColor = true;
+            this.city.Click += new System.EventHandler(this.city_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(301, 338);
-            this.Controls.Add(this.citys);
-            this.Controls.Add(this.columns);
-            this.Controls.Add(this.clients);
+            this.ClientSize = new System.Drawing.Size(565, 238);
+            this.Controls.Add(this.city);
+            this.Controls.Add(this.column);
+            this.Controls.Add(this.client);
             this.Controls.Add(this.manageColumn);
             this.Controls.Add(this.getClientUsage);
             this.Controls.Add(this.addCity);
@@ -172,6 +202,7 @@
             this.Text = "Главное меню";
             this.Load += new System.EventHandler(this.main_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -184,9 +215,9 @@
         private System.Windows.Forms.Button addCity;
         private System.Windows.Forms.Button getClientUsage;
         private System.Windows.Forms.Button manageColumn;
-        private System.Windows.Forms.Button clients;
-        private System.Windows.Forms.Button columns;
-        private System.Windows.Forms.Button citys;
+        private MaterialSkin.Controls.MaterialButton client;
+        private MaterialSkin.Controls.MaterialButton column;
+        private MaterialSkin.Controls.MaterialButton city;
     }
 }
 

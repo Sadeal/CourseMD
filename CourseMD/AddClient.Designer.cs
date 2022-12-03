@@ -48,9 +48,9 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 11);
+            this.back.Location = new System.Drawing.Point(6, 105);
             this.back.Name = "back";
-            this.back.Size = new System.Drawing.Size(90, 23);
+            this.back.Size = new System.Drawing.Size(90, 27);
             this.back.TabIndex = 1;
             this.back.Text = "Вернуться";
             this.back.UseVisualStyleBackColor = true;
@@ -58,42 +58,42 @@
             // 
             // client_name
             // 
-            this.client_name.Location = new System.Drawing.Point(170, 12);
+            this.client_name.Location = new System.Drawing.Point(164, 106);
             this.client_name.Name = "client_name";
             this.client_name.Size = new System.Drawing.Size(618, 22);
             this.client_name.TabIndex = 10;
             // 
             // key
             // 
-            this.key.Location = new System.Drawing.Point(170, 40);
+            this.key.Location = new System.Drawing.Point(164, 134);
             this.key.Name = "key";
             this.key.Size = new System.Drawing.Size(618, 22);
             this.key.TabIndex = 11;
             // 
             // address
             // 
-            this.address.Location = new System.Drawing.Point(170, 68);
+            this.address.Location = new System.Drawing.Point(164, 162);
             this.address.Name = "address";
             this.address.Size = new System.Drawing.Size(618, 22);
             this.address.TabIndex = 12;
             // 
             // phone
             // 
-            this.phone.Location = new System.Drawing.Point(170, 96);
+            this.phone.Location = new System.Drawing.Point(164, 190);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(618, 22);
             this.phone.TabIndex = 13;
             // 
             // reserve
             // 
-            this.reserve.Location = new System.Drawing.Point(170, 124);
+            this.reserve.Location = new System.Drawing.Point(164, 218);
             this.reserve.Name = "reserve";
             this.reserve.Size = new System.Drawing.Size(618, 22);
             this.reserve.TabIndex = 14;
             // 
             // city
             // 
-            this.city.Location = new System.Drawing.Point(170, 152);
+            this.city.Location = new System.Drawing.Point(164, 246);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(618, 22);
             this.city.TabIndex = 15;
@@ -101,7 +101,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(126, 15);
+            this.label1.Location = new System.Drawing.Point(120, 109);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 16);
             this.label1.TabIndex = 16;
@@ -110,7 +110,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(123, 43);
+            this.label2.Location = new System.Drawing.Point(117, 137);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 16);
             this.label2.TabIndex = 17;
@@ -119,7 +119,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(117, 71);
+            this.label3.Location = new System.Drawing.Point(111, 165);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 16);
             this.label3.TabIndex = 18;
@@ -128,7 +128,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(97, 99);
+            this.label4.Location = new System.Drawing.Point(91, 193);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
             this.label4.TabIndex = 19;
@@ -137,7 +137,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 127);
+            this.label5.Location = new System.Drawing.Point(26, 221);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 16);
             this.label5.TabIndex = 20;
@@ -146,7 +146,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(34, 155);
+            this.label6.Location = new System.Drawing.Point(28, 249);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 16);
             this.label6.TabIndex = 21;
@@ -154,7 +154,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(681, 180);
+            this.add.Location = new System.Drawing.Point(675, 274);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(107, 36);
             this.add.TabIndex = 22;
@@ -165,7 +165,7 @@
             // result
             // 
             this.result.AutoSize = true;
-            this.result.Location = new System.Drawing.Point(615, 190);
+            this.result.Location = new System.Drawing.Point(609, 284);
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(0, 16);
             this.result.TabIndex = 23;
@@ -174,7 +174,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 223);
+            this.ClientSize = new System.Drawing.Size(818, 284);
             this.Controls.Add(this.result);
             this.Controls.Add(this.add);
             this.Controls.Add(this.label6);

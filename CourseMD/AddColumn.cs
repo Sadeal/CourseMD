@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace CourseMD
 {
-    public partial class AddColumn : Form
+    public partial class AddColumn : MaterialForm
     {
         int id;
         public AddColumn()

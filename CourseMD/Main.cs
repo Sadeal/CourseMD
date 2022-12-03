@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,8 +12,10 @@ using System.Windows.Forms;
 
 namespace CourseMD
 {
-    public partial class Main : Form
+    public partial class Main : MaterialForm
     {
+        int x = 423;
+        int y = 200;
         public Main()
         {
             InitializeComponent();
@@ -25,7 +28,7 @@ namespace CourseMD
             getColumnUsage.Hide();
 
             addCity.Hide();
-            this.Size = new Size(245, 80);
+            this.Size = new Size(423, 130);
         }
 
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -86,9 +89,9 @@ namespace CourseMD
             this.Hide();
         }
 
-        private void clients_Click(object sender, EventArgs e)
+        private void client_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(245, 310);
+            this.Size = new Size(x, y);
             //show
             addClient.Show();
             manageClient.Show();
@@ -103,9 +106,9 @@ namespace CourseMD
             getColumnUsage.Hide();
         }
 
-        private void columns_Click(object sender, EventArgs e)
+        private void column_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(245, 310);
+            this.Size = new Size(x, y);
             //show
             addColumn.Show();
             manageColumn.Show();
@@ -119,10 +122,10 @@ namespace CourseMD
             getClientUsage.Hide();
         }
 
-        private void citys_Click(object sender, EventArgs e)
+        private void city_Click(object sender, EventArgs e)
         {
 
-            this.Size = new Size(245, 160);
+            this.Size = new Size(x, y);  //405 190
             //show
             addCity.Show();
             

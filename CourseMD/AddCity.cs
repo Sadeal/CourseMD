@@ -12,10 +12,11 @@ using System.Data.Common;
 using System.Xml;
 using System.Reflection.Emit;
 using System.Globalization;
+using MaterialSkin.Controls;
 
 namespace CourseMD
 {
-    public partial class AddCity : Form
+    public partial class AddCity : MaterialForm
     {
         private SqlDataReader myReader;
 

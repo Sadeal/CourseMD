@@ -49,7 +49,7 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 12);
+            this.back.Location = new System.Drawing.Point(26, 89);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(92, 23);
             this.back.TabIndex = 2;
@@ -65,7 +65,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(110, 15);
+            this.label1.Location = new System.Drawing.Point(124, 92);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 16);
             this.label1.TabIndex = 4;
@@ -73,7 +73,7 @@
             // 
             // id
             // 
-            this.id.Location = new System.Drawing.Point(198, 12);
+            this.id.Location = new System.Drawing.Point(212, 89);
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(590, 22);
             this.id.TabIndex = 5;
@@ -90,7 +90,7 @@
             this.client_name,
             this.liters,
             this.date});
-            this.table.Location = new System.Drawing.Point(13, 84);
+            this.table.Location = new System.Drawing.Point(27, 161);
             this.table.Name = "table";
             this.table.RowHeadersWidth = 51;
             this.table.RowTemplate.Height = 24;
@@ -132,7 +132,7 @@
             // 
             // show
             // 
-            this.show.Location = new System.Drawing.Point(13, 42);
+            this.show.Location = new System.Drawing.Point(27, 119);
             this.show.Name = "show";
             this.show.Size = new System.Drawing.Size(775, 36);
             this.show.TabIndex = 7;
@@ -144,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(818, 498);
             this.Controls.Add(this.show);
             this.Controls.Add(this.table);
             this.Controls.Add(this.id);

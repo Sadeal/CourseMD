@@ -40,7 +40,7 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 12);
+            this.back.Location = new System.Drawing.Point(30, 93);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(94, 23);
             this.back.TabIndex = 2;
@@ -51,7 +51,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(123, 13);
+            this.label1.Location = new System.Drawing.Point(141, 94);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 16);
             this.label1.TabIndex = 3;
@@ -60,7 +60,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 53);
+            this.label2.Location = new System.Drawing.Point(63, 134);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(130, 16);
             this.label2.TabIndex = 4;
@@ -68,21 +68,21 @@
             // 
             // city
             // 
-            this.city.Location = new System.Drawing.Point(182, 13);
+            this.city.Location = new System.Drawing.Point(200, 94);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(227, 22);
             this.city.TabIndex = 5;
             // 
             // price
             // 
-            this.price.Location = new System.Drawing.Point(182, 47);
+            this.price.Location = new System.Drawing.Point(200, 128);
             this.price.Name = "price";
             this.price.Size = new System.Drawing.Size(227, 22);
             this.price.TabIndex = 6;
             // 
             // result
             // 
-            this.result.Location = new System.Drawing.Point(12, 127);
+            this.result.Location = new System.Drawing.Point(30, 208);
             this.result.Multiline = true;
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(397, 83);
@@ -90,7 +90,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(13, 75);
+            this.add.Location = new System.Drawing.Point(31, 156);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(396, 46);
             this.add.TabIndex = 8;
@@ -102,7 +102,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(428, 222);
+            this.ClientSize = new System.Drawing.Size(464, 316);
             this.Controls.Add(this.add);
             this.Controls.Add(this.result);
             this.Controls.Add(this.price);

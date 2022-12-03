@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,8 +12,9 @@ using System.Windows.Forms;
 
 namespace CourseMD
 {
-    public partial class ManageClient : Form
+    public partial class ManageClient : MaterialForm
     {
+        SqlCommand select;
         public ManageClient()
         {
             InitializeComponent();
@@ -38,13 +40,47 @@ namespace CourseMD
                                            "connection timeout=10; " +
                                            "MultipleActiveResultSets = True");
                 con.Open();
-
-                SqlCommand select = new SqlCommand("SELECT client_name, [key], address, phone, reserve, city FROM Clients WHERE id_client = " + id.Text, con);
+                if (id.Text != "" && search_key.Text != "")
+                {
+                    select = new SqlCommand(
+                        "SELECT id_client, client_name, [key], address, phone, reserve, city " +
+                        "FROM Clients " +
+                        "WHERE id_client = " + id.Text, con);
+                }
+                else
+                {
+                    if(id.Text != "")
+                    {
+                        select = new SqlCommand(
+                        "SELECT id_client, client_name, [key], address, phone, reserve, city " +
+                        "FROM Clients WHERE id_client = " + id.Text, con);
+                    } else
+                    {
+                        if (search_key.Text != "")
+                        {
+                            select = new SqlCommand(
+                        "SELECT id_client, client_name, [key], address, phone, reserve, city " +
+                        "FROM Clients " +
+                        "WHERE [key] = \'" + search_key.Text +"\'", con);
+                        }
+                        else
+                        {
+                            MessageBox.Show(
+                            "Заполните любое из полей поиска",
+                            "Ошибка",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                            return;
+                        }
+                    }
+                }
                 SqlDataReader reader = select.ExecuteReader();
                 while (reader.Read())
                 {
+                    id.Text = reader["id_client"].ToString(); ;
                     client_name.Text = reader["client_name"].ToString();
                     key.Text = reader["key"].ToString();
+                    search_key.Text = reader["key"].ToString();
                     address.Text = reader["address"].ToString();
                     phone.Text = reader["phone"].ToString();
                     reserve.Text = reader["reserve"].ToString();
@@ -115,7 +151,6 @@ namespace CourseMD
             phone.Text = "";
             reserve.Text = "";
             city.Text = "";
-            id.Text = "";
             id.Enabled = true;
             cancel.Hide();
         }

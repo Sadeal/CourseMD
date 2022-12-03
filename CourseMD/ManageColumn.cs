@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialSkin.Controls;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,7 +13,7 @@ using System.Windows.Forms;
 
 namespace CourseMD
 {
-    public partial class ManageColumn : Form
+    public partial class ManageColumn : MaterialForm
     {
         public ManageColumn()
         {

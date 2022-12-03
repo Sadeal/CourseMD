@@ -38,7 +38,7 @@
             // 
             // back
             // 
-            this.back.Location = new System.Drawing.Point(12, 12);
+            this.back.Location = new System.Drawing.Point(36, 94);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(90, 23);
             this.back.TabIndex = 1;
@@ -48,7 +48,7 @@
             // 
             // city
             // 
-            this.city.Location = new System.Drawing.Point(265, 15);
+            this.city.Location = new System.Drawing.Point(289, 97);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(177, 22);
             this.city.TabIndex = 2;
@@ -56,7 +56,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(108, 15);
+            this.label1.Location = new System.Drawing.Point(132, 97);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 16);
             this.label1.TabIndex = 3;
@@ -64,7 +64,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(12, 42);
+            this.add.Location = new System.Drawing.Point(36, 124);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(430, 39);
             this.add.TabIndex = 4;
@@ -74,7 +74,7 @@
             // 
             // result
             // 
-            this.result.Location = new System.Drawing.Point(13, 88);
+            this.result.Location = new System.Drawing.Point(37, 170);
             this.result.Multiline = true;
             this.result.Name = "result";
             this.result.Size = new System.Drawing.Size(429, 77);
@@ -84,7 +84,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 171);
+            this.ClientSize = new System.Drawing.Size(472, 215);
             this.Controls.Add(this.result);
             this.Controls.Add(this.add);
             this.Controls.Add(this.label1);
