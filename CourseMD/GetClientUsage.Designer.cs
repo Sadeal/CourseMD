@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetClientUsage));
             this.back = new System.Windows.Forms.Button();
             this.show = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -129,7 +130,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.show);
             this.Controls.Add(this.back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GetClientUsage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Использования клиентом";
             ((System.ComponentModel.ISupportInitialize)(this.table)).EndInit();
             this.ResumeLayout(false);

@@ -25,6 +25,7 @@ namespace CourseMD
             getColumnUsage.Hide();
 
             addCity.Hide();
+            this.Size = new Size(245, 80);
         }
 
         private void Main_FormClosed(object sender, FormClosedEventArgs e)
@@ -87,6 +88,7 @@ namespace CourseMD
 
         private void clients_Click(object sender, EventArgs e)
         {
+            this.Size = new Size(245, 310);
             //show
             addClient.Show();
             manageClient.Show();
@@ -103,6 +105,7 @@ namespace CourseMD
 
         private void columns_Click(object sender, EventArgs e)
         {
+            this.Size = new Size(245, 310);
             //show
             addColumn.Show();
             manageColumn.Show();
@@ -118,6 +121,8 @@ namespace CourseMD
 
         private void citys_Click(object sender, EventArgs e)
         {
+
+            this.Size = new Size(245, 160);
             //show
             addCity.Show();
             

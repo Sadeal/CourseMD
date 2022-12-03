@@ -29,18 +29,19 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GetColumnUsage));
             this.back = new System.Windows.Forms.Button();
             this.water_dbDataSet = new CourseMD.water_dbDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.TextBox();
             this.usageTableAdapter = new CourseMD.water_dbDataSetTableAdapters.UsageTableAdapter();
             this.table = new System.Windows.Forms.DataGridView();
-            this.usageBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.show = new System.Windows.Forms.Button();
             this.id_client = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.client_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.liters = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usageBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.show = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.water_dbDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.usageBindingSource)).BeginInit();
@@ -96,21 +97,6 @@
             this.table.Size = new System.Drawing.Size(775, 354);
             this.table.TabIndex = 6;
             // 
-            // usageBindingSource
-            // 
-            this.usageBindingSource.DataMember = "Usage";
-            this.usageBindingSource.DataSource = this.water_dbDataSet;
-            // 
-            // show
-            // 
-            this.show.Location = new System.Drawing.Point(13, 42);
-            this.show.Name = "show";
-            this.show.Size = new System.Drawing.Size(775, 36);
-            this.show.TabIndex = 7;
-            this.show.Text = "Показать";
-            this.show.UseVisualStyleBackColor = true;
-            this.show.Click += new System.EventHandler(this.show_Click);
-            // 
             // id_client
             // 
             this.id_client.HeaderText = "id клиента";
@@ -139,6 +125,21 @@
             this.date.Name = "date";
             this.date.Width = 125;
             // 
+            // usageBindingSource
+            // 
+            this.usageBindingSource.DataMember = "Usage";
+            this.usageBindingSource.DataSource = this.water_dbDataSet;
+            // 
+            // show
+            // 
+            this.show.Location = new System.Drawing.Point(13, 42);
+            this.show.Name = "show";
+            this.show.Size = new System.Drawing.Size(775, 36);
+            this.show.TabIndex = 7;
+            this.show.Text = "Показать";
+            this.show.UseVisualStyleBackColor = true;
+            this.show.Click += new System.EventHandler(this.show_Click);
+            // 
             // GetColumnUsage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -149,7 +150,10 @@
             this.Controls.Add(this.id);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "GetColumnUsage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Получить данные о использовании колонки";
             this.Load += new System.EventHandler(this.GetColumnUsage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.water_dbDataSet)).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageClient));
             this.back = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.TextBox();
@@ -233,7 +234,10 @@
             this.Controls.Add(this.id);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ManageClient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Управление клиентами";
             this.ResumeLayout(false);
             this.PerformLayout();

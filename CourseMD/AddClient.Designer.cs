@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddClient));
             this.back = new System.Windows.Forms.Button();
             this.client_name = new System.Windows.Forms.TextBox();
             this.key = new System.Windows.Forms.TextBox();
@@ -189,7 +190,10 @@
             this.Controls.Add(this.key);
             this.Controls.Add(this.client_name);
             this.Controls.Add(this.back);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddClient";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Добавление клиента";
             this.ResumeLayout(false);
             this.PerformLayout();
