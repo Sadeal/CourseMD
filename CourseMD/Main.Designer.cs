@@ -39,6 +39,10 @@
             this.client = new MaterialSkin.Controls.MaterialButton();
             this.column = new MaterialSkin.Controls.MaterialButton();
             this.city = new MaterialSkin.Controls.MaterialButton();
+            this.getClients = new System.Windows.Forms.Button();
+            this.getColumns = new System.Windows.Forms.Button();
+            this.b1 = new System.Windows.Forms.Button();
+            this.editCity = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // manageClient
@@ -88,7 +92,7 @@
             // addCity
             // 
             this.addCity.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.addCity.Location = new System.Drawing.Point(192, 149);
+            this.addCity.Location = new System.Drawing.Point(93, 149);
             this.addCity.Name = "addCity";
             this.addCity.Size = new System.Drawing.Size(180, 83);
             this.addCity.TabIndex = 4;
@@ -178,12 +182,59 @@
             this.city.UseVisualStyleBackColor = true;
             this.city.Click += new System.EventHandler(this.city_Click);
             // 
+            // getClients
+            // 
+            this.getClients.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.getClients.Location = new System.Drawing.Point(192, 238);
+            this.getClients.Name = "getClients";
+            this.getClients.Size = new System.Drawing.Size(180, 83);
+            this.getClients.TabIndex = 13;
+            this.getClients.Text = "Посмотреть клиентов";
+            this.getClients.UseVisualStyleBackColor = false;
+            this.getClients.Click += new System.EventHandler(this.getClients_Click);
+            // 
+            // getColumns
+            // 
+            this.getColumns.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.getColumns.Location = new System.Drawing.Point(192, 238);
+            this.getColumns.Name = "getColumns";
+            this.getColumns.Size = new System.Drawing.Size(180, 83);
+            this.getColumns.TabIndex = 14;
+            this.getColumns.Text = "Посмотреть колонки";
+            this.getColumns.UseVisualStyleBackColor = false;
+            this.getColumns.Click += new System.EventHandler(this.getColumns_Click);
+            // 
+            // b1
+            // 
+            this.b1.Location = new System.Drawing.Point(248, 32);
+            this.b1.Name = "b1";
+            this.b1.Size = new System.Drawing.Size(310, 37);
+            this.b1.TabIndex = 15;
+            this.b1.Text = "Оптимизированный запрос";
+            this.b1.UseVisualStyleBackColor = true;
+            this.b1.Click += new System.EventHandler(this.b1_Click);
+            // 
+            // editCity
+            // 
+            this.editCity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.editCity.Location = new System.Drawing.Point(279, 149);
+            this.editCity.Name = "editCity";
+            this.editCity.Size = new System.Drawing.Size(180, 83);
+            this.editCity.TabIndex = 16;
+            this.editCity.Text = "Редактировать населённый пункт";
+            this.editCity.UseVisualStyleBackColor = false;
+            this.editCity.Click += new System.EventHandler(this.editCity_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(565, 238);
+            this.ClientSize = new System.Drawing.Size(619, 465);
+            this.Controls.Add(this.editCity);
+            this.Controls.Add(this.b1);
+            this.Controls.Add(this.getColumns);
+            this.Controls.Add(this.getClients);
             this.Controls.Add(this.city);
             this.Controls.Add(this.column);
             this.Controls.Add(this.client);
@@ -218,6 +269,10 @@
         private MaterialSkin.Controls.MaterialButton client;
         private MaterialSkin.Controls.MaterialButton column;
         private MaterialSkin.Controls.MaterialButton city;
+        private System.Windows.Forms.Button getClients;
+        private System.Windows.Forms.Button getColumns;
+        private System.Windows.Forms.Button b1;
+        private System.Windows.Forms.Button editCity;
     }
 }
 

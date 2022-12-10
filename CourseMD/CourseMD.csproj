@@ -56,11 +56,35 @@
     <Compile Include="AddCity.Designer.cs">
       <DependentUpon>AddCity.cs</DependentUpon>
     </Compile>
+    <Compile Include="EditCity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCity.Designer.cs">
+      <DependentUpon>EditCity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetClients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetClients.Designer.cs">
+      <DependentUpon>GetClients.cs</DependentUpon>
+    </Compile>
     <Compile Include="GetClientUsage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GetClientUsage.Designer.cs">
       <DependentUpon>GetClientUsage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetColumns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetColumns.Designer.cs">
+      <DependentUpon>GetColumns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetSQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetSQL.Designer.cs">
+      <DependentUpon>GetSQL.cs</DependentUpon>
     </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -114,11 +138,23 @@
     <EmbeddedResource Include="AddColumn.resx">
       <DependentUpon>AddColumn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EditCity.resx">
+      <DependentUpon>EditCity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetClients.resx">
+      <DependentUpon>GetClients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GetClientUsage.resx">
       <DependentUpon>GetClientUsage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GetColumns.resx">
+      <DependentUpon>GetColumns.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GetColumnUsage.resx">
       <DependentUpon>GetColumnUsage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetSQL.resx">
+      <DependentUpon>GetSQL.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>

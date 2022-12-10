@@ -19,15 +19,20 @@ namespace CourseMD
         public Main()
         {
             InitializeComponent();
+
             addClient.Hide();
             manageClient.Hide();
             getClientUsage.Hide();
+            getClients.Hide();
 
             addColumn.Hide();
             manageColumn.Hide();
             getColumnUsage.Hide();
+            getColumns.Hide();
 
             addCity.Hide();
+            editCity.Hide();
+
             this.Size = new Size(423, 130);
         }
 
@@ -91,35 +96,41 @@ namespace CourseMD
 
         private void client_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(x, y);
+            this.Size = new Size(x, y+80);
             //show
             addClient.Show();
             manageClient.Show();
             getClientUsage.Show();
+            getClients.Show();
         
 
             //hide
             addCity.Hide();
+            editCity.Hide();
 
             addColumn.Hide();
             manageColumn.Hide();
             getColumnUsage.Hide();
+            getColumns.Hide();
         }
 
         private void column_Click(object sender, EventArgs e)
         {
-            this.Size = new Size(x, y);
+            this.Size = new Size(x, y+80);
             //show
             addColumn.Show();
             manageColumn.Show();
             getColumnUsage.Show();
+            getColumns.Show();
 
             //hide
             addCity.Hide();
+            editCity.Hide();
 
             addClient.Hide();
             manageClient.Hide();
             getClientUsage.Hide();
+            getClients.Hide();
         }
 
         private void city_Click(object sender, EventArgs e)
@@ -128,20 +139,50 @@ namespace CourseMD
             this.Size = new Size(x, y);  //405 190
             //show
             addCity.Show();
+            editCity.Show();
             
             //hide
             addClient.Hide();
             manageClient.Hide();
             getClientUsage.Hide();
+            getClients.Hide();
 
             addColumn.Hide();
             manageColumn.Hide();
             getColumnUsage.Hide();
+            getColumns.Hide();
         }
 
         private void btnExitProgram_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void getClients_Click(object sender, EventArgs e)
+        {
+            GetClients getClients = new GetClients();
+            getClients.Show();
+            this.Hide();
+        }
+
+        private void getColumns_Click(object sender, EventArgs e)
+        {
+            GetColumns getColumns = new GetColumns();
+            getColumns.Show();
+            this.Hide();
+        }
+
+        private void b1_Click(object sender, EventArgs e)
+        {
+            GetSQL getSQL = new GetSQL();
+            getSQL.Show();
+        }
+
+        private void editCity_Click(object sender, EventArgs e)
+        {
+            EditCity editCity = new EditCity();
+            editCity.Show();
+            this.Hide();
         }
     }
 }
